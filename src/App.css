@@ -1,0 +1,83 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(180, 154, 110);
+}
+.titulo-cafe {
+  text-align: center;
+  color: rgb(12, 12, 12);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2em;
+  margin-top: 20px;
+}
+.menu-card {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+.menu-card-interior > p {
+  text-align: center;
+}
+.menu-card-interior {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+h2 {
+  text-align: center;
+  color: rgb(12, 12, 12);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+}
+.menu-card-interior img {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  border-radius: 8px;
+}
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: auto;
+  padding: 10px;
+}
+footer{
+  text-align: center;
+  font-size: 0.9em;
+  color: rgb(12, 12, 12);
+  margin-top: 20px;
+}
+
+/* @keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */

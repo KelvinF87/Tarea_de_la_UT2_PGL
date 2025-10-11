@@ -1,0 +1,52 @@
+{
+  "cafeName": "CAMPER CAFE",
+  "established": 2020,
+  "imgCoffe": "https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg",
+   "imgDessert": "https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg",
+  "menu": {
+    "coffee": [
+      {
+        "name": "French Vanilla",
+        "price": 3.00
+      },
+      {
+        "name": "Caramel Macchiato",
+        "price": 3.75
+      },
+      {
+        "name": "Pumpkin Spice",
+        "price": 3.50
+      },
+      {
+        "name": "Hazelnut",
+        "price": 4.00
+      },
+      {
+        "name": "Mocha",
+        "price": 4.50
+      }
+    ],
+    "desserts": [
+      {
+        "name": "Donut",
+        "price": 1.50
+      },
+      {
+        "name": "Cherry Pie",
+        "price": 2.75
+      },
+      {
+        "name": "Cheesecake",
+        "price": 3.00
+      },
+      {
+        "name": "Cinnamon Roll",
+        "price": 2.50
+      }
+    ]
+  },
+  "contact": {
+    "website": "Visit our website",
+    "address": "123 Free Code Camp Drive"
+  }
+}
