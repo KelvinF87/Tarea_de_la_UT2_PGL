@@ -1,40 +1,28 @@
-import React from 'react';
-export const Card = ({ data }) => {
+import React from "react";
+import { ItemsCard } from "./ItemsCard";
+import { BtnAdd } from "./BtnAdd";
+
+export const Card = ({ data, onOpenModal }) => {
+  const categorias = Object.keys(data.menu);
+
   return (
     <div className="menu-card">
       <div className="menu-card-interior">
         <h1 className="titulo-cafe">{data.cafeName}</h1>
         <p>Est. {data.established}</p>
         <hr />
+        <BtnAdd tipo={"add-categoria"} onOpenModal={() => onOpenModal('add-category')} />
 
-        <h2>Coffee</h2>
-        <img src={data.imgCoffe} alt="Coffee icon" />
-  
-        {data.menu.coffee.map((item) => (
-          <div className="menu-item" key={item.name}>
-            <span>{item.name}</span>
-            <span>{item.price.toFixed(2)} €</span>
-          </div>
+        {categorias.map((categoria) => (
+          <ItemsCard
+            key={categoria}
+            data={data}
+            categoria={categoria}
+            onOpenModal={onOpenModal}
+          />
         ))}
 
-        <h2>Desserts</h2>
-        <img src={data.imgDessert} alt="Dessert icon" />
-    
-        {data.menu.desserts.map((item) => (
-          <div className="menu-item" key={item.name}>
-            <span>{item.name}</span>
-            <span>{item.price.toFixed(2)} €</span>
-          </div>
-        ))}
-        
         <hr />
-
-        <footer>
-          <p>        
-            <a href="#">{data.contact.website}</a>
-          </p>
-          <p>{data.contact.address}</p>
-        </footer>
       </div>
     </div>
   );
