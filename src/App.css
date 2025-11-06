@@ -44,6 +44,30 @@ h2 {
   max-width: 80%;
   border-radius: 8px;
 }
+.btnPrimary{
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(100, 50, 20);
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+}
+.btnPrimary:hover{
+  background-color: rgb(120, 70, 30);
+}
+.btnSalir{
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(213, 23, 23);
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+}
+.btnSalir:hover{
+  background-color: rgb(170, 40, 40);
+}
 .menu-item {
   display: flex;
   flex-direction: row;
@@ -79,26 +103,3 @@ footer{
 .add-item-container {
   margin-top: 10px;
 }
-
-/* @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
